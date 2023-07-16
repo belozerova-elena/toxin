@@ -1,0 +1,10 @@
+.logo {
+  &__link {
+    line-height: 0;
+  }
+  &__link-body {
+    width: 106px;
+    min-height: 40px;
+    background-image: url(../../assets/logo.svg);
+  }
+}

@@ -1,0 +1,29 @@
+.navigation {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 50px;
+    list-style-type: none;
+  }
+  &__list-item {
+    padding-right: 20px;
+  }
+  &__list-item--link {
+    color: rgba(31, 32, 65, 0.5);
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: rgba(31, 32, 65, 0.75);
+    }
+  }
+  &__list-item--link-active {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1280px) {
+  .navigation__list {
+    padding-left: 20px; 
+  } 
+}

@@ -1,0 +1,80 @@
+.sign-in {
+  background: 44% 53.5%/106% url(../../assets/sign-in.jpg) no-repeat;
+  &__container {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 172px 0;
+  }
+  &__container-entry-card {
+    min-width: 380px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .sign-in {
+    background-size: cover; 
+  } 
+}
+@media (max-width: 960px) {
+  .sign-in__container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0;
+  }
+  .sign-in__container-entry-card {
+    align-items: center;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .sign-in__container {
+    padding: 100px 0 200px 0;
+  }
+  .sign-in__container-entry-card {
+    min-width: 320px;
+    padding-bottom: 50px;
+  }
+}
+
+.login-card {
+  min-width: 380px;
+  max-width: 380px;
+  padding: 39px 30px 30px 29px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  &__container-form--inputs {
+    margin-top: 20px;
+  }
+  &__container-form--inputs-password {
+    margin-top: 10px;
+  }
+  &__container-form--button {
+    margin-top: 20px;
+  }
+  &__container-form--question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 29px;
+  }
+  &__container-form--question-button {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    min-width: 200px;
+    padding: 10px; 
+    &__container {
+      max-width: 300px;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  } 
+}
